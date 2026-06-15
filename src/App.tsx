@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./styles/globals.css";
 import { useState, useEffect, createContext } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
