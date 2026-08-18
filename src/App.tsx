@@ -2,6 +2,7 @@
 import { createContext, useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 
+import Hero from "./components/Hero";
 // SECTION_IMPORTS
 
 export const ThemeContext = createContext({
@@ -21,9 +22,11 @@ export default function App() {
       <div className="min-h-screen bg-background text-foreground">
         <Navbar />
         <main>
+          <Hero />
           {/* SECTIONS */}
         </main>
       </div>
     </ThemeContext.Provider>
   );
 }
+
