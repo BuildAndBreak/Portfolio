@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 
 import Hero from "./components/Hero";
+import Projects from "./components/Projects";
 // SECTION_IMPORTS
 
 export const ThemeContext = createContext({
@@ -23,10 +24,12 @@ export default function App() {
         <Navbar />
         <main>
           <Hero />
+          <Projects />
           {/* SECTIONS */}
         </main>
       </div>
     </ThemeContext.Provider>
   );
 }
+
 
