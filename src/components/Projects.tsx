@@ -161,7 +161,13 @@ function ProjectCard({
           <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-white/10 rounded-full" />
 
           <div className="absolute bottom-3 right-3 w-9 h-9 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
-            <ArrowUpRight className="w-4 h-4 text-white" />
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              onClick={(e) => e.stopPropagation()}>
+              <ArrowUpRight className="w-4 h-4 text-white" />
+            </a>
           </div>
         </div>
 
