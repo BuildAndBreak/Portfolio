@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import About from "./components/About";
 // SECTION_IMPORTS
 
 export const ThemeContext = createContext({
@@ -19,17 +20,18 @@ export default function App() {
   }, [isDark]);
 
   return (
-    <ThemeContext.Provider value={{ isDark, toggle: () => setIsDark((value) => !value) }}>
+    <ThemeContext.Provider
+      value={{ isDark, toggle: () => setIsDark((value) => !value) }}>
       <div className="min-h-screen bg-background text-foreground">
         <Navbar />
         <main>
           <Hero />
           <Projects />
+          <About />
+          <About />
           {/* SECTIONS */}
         </main>
       </div>
     </ThemeContext.Provider>
   );
 }
-
-
