@@ -89,10 +89,18 @@ export default function About() {
               and switching, and security systems.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              I'm studying for Cisco's CCNA certification, focusing on IPv4/IPv6
-              addressing, subnetting, switching, VLANs, routing, and network
-              troubleshooting. I reinforce each topic through Packet Tracer and
-              homelab practice.
+              Right now, I&apos;m focused on my CCNA studies and building hands-on
+              experience with Packet Tracer and personal projects. I&apos;m
+              interested in networking, routing and switching, security
+              systems, access control, and video surveillance. I also enjoy
+              building web projects with React and TypeScript, with a focus on
+              clean design and smooth interactions.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              I&apos;m also interested in blockchain technology because I find the
+              ideas behind it interesting. Outside of tech, I enjoy sports and
+              board games. I like learning new things, working through
+              challenges, and improving step by step.
             </p>
 
             {/* Career path */}
