@@ -1,18 +1,74 @@
-# React + Vite
+# Tiago Pereira — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio showcasing my web projects, CCNA-focused homelab work, technical background, and professional goals in networking and security systems.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## React Compiler
+## Overview
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Screenshot
 
-Note: This will impact Vite dev & build performances.
+**Mobile Version**
 
-## Expanding the ESLint configuration
+<img src="./screenshots/mobileVersion.webp" alt="Mobile preview of the portfolio" width="250" />
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Laptop Version**
+
+<img src="./screenshots/laptopVersion.webp" alt="Laptop preview of the portfolio" width="650" />
+
+### Links
+
+- Solution URL: [GitHub repository](https://github.com/BuildAndBreak/Portfolio)
+- Live Site URL: [Portfolio](https://portfolio-tiagopereira.netlify.app)
+
+## My process
+
+### Built with
+
+- [React](https://reactjs.org/) - JS library
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [Vite](https://vite.dev/) - Build tool and development server
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first styling
+- [Motion](https://motion.dev/) - Interface animations
+
+### What I learned
+
+This project focuses on strengthening my TypeScript skills through typed React components, reusable data models, and safer state management.
+
+I also learned to create purposeful interface animations with Motion, including section reveals, hover feedback, and interactive project cards.
+
+The project also reinforced the importance of optimizing image assets and keeping the interface consistent across screen sizes.
+
+### Continued development
+
+I want to continue improving my TypeScript knowledge through stricter types and reusable interfaces, while refining accessible and performant interface animations.
+
+### Useful resources
+
+- [React documentation](https://react.dev/) - Reference for component design and state management.
+- [Tailwind CSS documentation](https://tailwindcss.com/docs) - Reference for responsive styling and utility classes.
+- [Motion documentation](https://motion.dev/docs/react) - Reference for page and component animations.
+
+## Author
+
+- Website - [Portfolio](https://portfolio-tiagopereira.netlify.app)
+- Frontend Mentor - [@BuildAndBreak](https://www.frontendmentor.io/profile/BuildAndBreak)
+- Linkedin - [Tiago Pereira](https://www.linkedin.com/in/tiago-pereira-5a4698289/)
+- Github - [@BuildAndBreak](https://github.com/BuildAndBreak)
+
+## Acknowledgments
+
+Thanks to the React, Tailwind CSS, and Motion communities for the documentation and tools that support this project.
+
+Thanks to the networking and security-systems communities for the resources that support my continued technical development.
