@@ -3,11 +3,18 @@ import { GraduationCap, MapPin, Mail, Target } from "lucide-react";
 
 const timeline = [
   {
-    year: "2025 – Present",
-    role: "CCNA & Network Engineering Focus",
-    company: "Homelab · Online courses · Projects",
+    year: "2026 (expected)",
+    role: "Cisco CCNA Certification",
+    company: "Cisco · Homelab · Network Labs",
     type: "now" as const,
-    desc: "Studying for the CCNA certification, reinforcing networking fundamentals through hands-on labs and homelab practice.",
+    desc: "Completing the CCNA certification through hands-on labs covering networking fundamentals, routing, switching, and troubleshooting.",
+  },
+  {
+    year: "2026",
+    role: "Hikvision & AJAX Security Systems Certifications",
+    company: "Professional Technical Training",
+    type: "edu" as const,
+    desc: "Certified training for alarm-system, access-control, and video-surveillance installations using Hikvision and AJAX security solutions.",
   },
   {
     year: "2022 – 2025",
@@ -77,8 +84,9 @@ export default function About() {
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
               My background in Electronics and Computer Systems gave me a solid
-              foundation in hardware, infrastructure, and troubleshooting. It
-              now supports my transition into networking and IT.
+              foundation in hardware, infrastructure, and troubleshooting. Now,
+              I want to deepen my knowledge of network infrastructure, routing
+              and switching, and security systems.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               I'm studying for Cisco's CCNA certification, focusing on IPv4/IPv6
@@ -86,17 +94,6 @@ export default function About() {
               troubleshooting. I reinforce each topic through Packet Tracer and
               homelab practice.
             </p>
-
-            <div className="flex flex-wrap gap-5 mb-8">
-              <div className="flex items-center gap-2 text-muted-foreground text-sm">
-                <MapPin className="w-4 h-4 text-cyan-500 dark:text-cyan-400 shrink-0" />
-                Portugal
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground text-sm">
-                <Mail className="w-4 h-4 text-cyan-500 dark:text-cyan-400 shrink-0" />
-                tiagodlapereira@gmail.com
-              </div>
-            </div>
 
             {/* Career path */}
             <div className="rounded-xl border border-border bg-card/50 backdrop-blur-sm p-5">

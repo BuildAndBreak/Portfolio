@@ -15,7 +15,6 @@ type Project = {
   highlights: string[];
   gradientClasses: string;
   glowClass: string;
-  label: string;
   sourceUrl?: string;
   liveUrl?: string;
   previewImage?: string;
@@ -34,7 +33,6 @@ const projects: Project[] = [
     ],
     gradientClasses: "from-orange-500 via-amber-500 to-yellow-500",
     glowClass: "hover:shadow-orange-500/20",
-    label: "Web",
     sourceUrl: "https://github.com/BuildAndBreak/weather-app",
     liveUrl: "https://weather-app-bnb.netlify.app/",
     previewImage: weatherAppPreview,
@@ -51,7 +49,6 @@ const projects: Project[] = [
     ],
     gradientClasses: "from-slate-600 via-slate-500 to-slate-700",
     glowClass: "hover:shadow-slate-500/20",
-    label: "Web",
     sourceUrl: "https://github.com/BuildAndBreak/Secret-Santa",
     liveUrl: "https://secret-santa-bnb.netlify.app/",
     previewImage: secretSantaPreview,
@@ -68,7 +65,6 @@ const projects: Project[] = [
     ],
     gradientClasses: "from-rose-500 via-pink-500 to-fuchsia-600",
     glowClass: "hover:shadow-rose-500/20",
-    label: "Web",
     liveUrl: "https://ips-cam.ch",
     previewImage: ipsCamPreview,
   },
@@ -84,18 +80,9 @@ const projects: Project[] = [
     ],
     gradientClasses: "from-cyan-500 via-blue-500 to-indigo-600",
     glowClass: "hover:shadow-cyan-500/20",
-    label: "Networking",
     previewImage: homelabPreview,
   },
 ];
-
-const labelColors: Record<string, string> = {
-  Sysadmin: "bg-cyan-700/90 text-white",
-  Networking: "bg-teal-700/90 text-white",
-  "IT Support": "bg-violet-700/90 text-white",
-  Databases: "bg-orange-600/90 text-white",
-  Web: "bg-rose-600/90 text-white",
-};
 
 function ProjectCard({
   project,
@@ -127,6 +114,7 @@ function ProjectCard({
 
   return (
     <motion.div
+      className="h-full"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
@@ -139,7 +127,7 @@ function ProjectCard({
         ref={cardRef}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        className={`group relative rounded-2xl border border-border bg-card/50 backdrop-blur-sm overflow-hidden cursor-default transition-[border-color,box-shadow] duration-300 hover:border-white/15 hover:shadow-2xl ${project.glowClass}`}>
+        className={`group relative flex h-full flex-col rounded-2xl border border-border bg-card/50 backdrop-blur-sm overflow-hidden cursor-default transition-[border-color,box-shadow] duration-300 hover:border-white/15 hover:shadow-2xl ${project.glowClass}`}>
         <div
           className={`relative h-52 bg-linear-to-br ${project.gradientClasses} overflow-hidden`}>
           {project.previewImage && (
@@ -171,11 +159,7 @@ function ProjectCard({
           </div>
         </div>
 
-        <div className="p-6">
-          <span
-            className={`inline-flex mb-3 px-2.5 py-1 rounded-full border border-white/25 shadow-sm text-xs font-semibold ${labelColors[project.label]}`}>
-            {project.label}
-          </span>
+        <div className="flex flex-1 flex-col p-6">
           <h3
             className="text-foreground font-bold mb-2 group-hover:text-cyan-500 dark:group-hover:text-cyan-400 transition-colors duration-300"
             style={{ fontSize: "1.1rem" }}>
@@ -204,7 +188,7 @@ function ProjectCard({
             ))}
           </div>
 
-          <div className="flex items-center gap-4 pt-3 border-t border-border">
+          <div className="mt-auto flex items-center gap-4 pt-3 border-t border-border">
             {project.sourceUrl && (
               <a
                 href={project.sourceUrl}
@@ -263,7 +247,7 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid auto-rows-fr grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
